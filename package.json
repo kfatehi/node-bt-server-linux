@@ -1,0 +1,23 @@
+{
+  "name": "bt-server-linux",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node src/_beaglebone_test.js",
+    "watch-sync": "watchy -w src -- rsync -azP --delete src root@192.168.0.108:/root/bt-serial-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keyvanfatehi/node-bt-server-linux.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keyvanfatehi/node-bt-server-linux/issues"
+  },
+  "homepage": "https://github.com/keyvanfatehi/node-bt-server-linux#readme",
+  "dependencies": {
+    "shelljs": "^0.5.3"
+  }
+}
